@@ -1,78 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Sadia Islam Sizi</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cv-container {
+      text-align: center;
+      background-color: white;
+      padding: 35px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      width: 70%;
+      margin: 30px auto;
+    }
+
+    .cv-container img {
+      border-radius: 50%;
+      border: 2px solid #ccc;
+    }
+
+    .cv-container h1 {
+      color: #2b2b2b;
+      margin-bottom: 2px;
+    }
+
+    .cv-container p {
+      color: #555;
+      font-size: 15px;
+      margin: 5px 0;
+    }
+
+    .section {
+      background-color: white;
+      width: 70%;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #2e8b57;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .section p, .section li {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #bbb;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #e3e3e3;
+      color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+  </style>
 </head>
 <body>
-    <div class="cv-container">
-      <img src="Image/3.jpg" width="200" alt="Sizi">
-      <h1>Sadia Islam Sizi</h1>
-      <p>CSE Student | Web Developer | Researcher</p>
-      <p>Email: sadiaislamsizi5@gmail.com.</p>
-      <p>Phone: +880 1234-567890</p>
-    </div>
 
-    <div class="section">
-        <h2>Profile</h2>
-        <p>Passionate about frontend design, Art/draw. Interest in research about unknown facts. </p>
+  <div class="cv-container">
+    <img src="Image/3.jpg" width="150" alt="Sadia Islam Sizi">
+    <h1>Sadia Islam Sizi</h1>
+    <p>CSE Student | Web Developer | Researcher</p>
+    <p>Email: sadiaislamsizi5@gmail.com</p>
+    <p>Phone: +880 1234-567890</p>
+  </div>
 
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML / CSS / JavaScript</li>
-            <li>Node.js, Express</li>
-            <li>MySQL</li>
-        </ul>
+  <div class="section">
+    <h2>Profile</h2>
+    <p>Passionate about frontend design, art, and creative work. Interested in exploring research about unknown facts and developing modern web solutions.</p>
 
-        <table border="1" cellspacing="0">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+      <li>Node.js, Express</li>
+      <li>MySQL</li>
+    </ul>
+
+    <h2>Education</h2>
+    <table>
+      <tr>
         <th>No.</th>
-        <th>Instituitions</th>
+        <th>Institution</th>
         <th>Board</th>
         <th>GPA</th>
         <th>Year</th>
-        <tr>
-            <td>1</td>
-            <td>Police Line High School, Cumilla.</td>
-            <td>Cumilla</td>
-            <td>5.00</td>
-            <td>2019</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Cumilla Govt. Women's College.</td>
-            <td>Cumilla</td>
-            <td>5.00</td>
-            <td>2021</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Bangladesh Army International University of Science and Technology (BAIUST), Cumilla</td>
-            <td>Cumilla</td>
-            <td>Ongoing</td>
-            <td>-</td>
-        </tr>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Police Line High School, Cumilla</td>
+        <td>Cumilla</td>
+        <td>5.00</td>
+        <td>2019</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Cumilla Govt. Women's College</td>
+        <td>Cumilla</td>
+        <td>5.00</td>
+        <td>2021</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Bangladesh Army International University of Science and Technology (BAIUST), Cumilla</td>
+        <td>Cumilla</td>
+        <td>Ongoing</td>
+        <td>-</td>
+      </tr>
+    </table>
 
-        <h2>Languages</h2>
-        <ul>
-            <li>English</li>
-            <li>Bangla</li>
-        </ul>
+    <h2>Languages</h2>
+    <ul>
+      <li>English</li>
+      <li>Bangla</li>
+    </ul>
 
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>UNIDESK:</strong> University Application Management System using HTML, CSS, JS, Node.js, and MySQL.</li>
+      <li><strong>University Event Management System:</strong> Database project with CRUD operations and views using MySQL.</li>
+    </ul>
 
-        <h2>Projects</h2>
-          <ul>
-            <li><strong>UNIDESK- </strong>University Application Management System , using HTML, CSS, JS, Node.js, and MySQL.</li>
-            <li><strong>University Event Management System- </strong> Database project with different operations in MySQL.</li>
-        </ul>
+    <h2>Interests</h2>
+    <ul>
+      <li>Self Work</li>
+      <li>Interior Design</li>
+      <li>Web Development</li>
+      <li>Research</li>
+    </ul>
+  </div>
 
-        <h2>Interests</h2>
-          <ul>
-            <li>Self Work</li>
-            <li>Interior Design</li>
-            <li>Web Development</li>
-            <li>Research</li>
-          </ul>
-    </div>
 </body>
 </html>
