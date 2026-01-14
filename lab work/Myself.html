@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizi's PortFolio</title>
+
+    <style>
+        :root{
+            --accent:#8d4925;
+            --bg:#c0f3f3;
+            --card:#ffffff;
+            --text:#1a1a1a;
+            --muted:#555;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Segoe UI, sans-serif;
+            background:var(--bg);
+            color:var(--text);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+
+        .container{
+            max-width:1150px;
+            width:100%;
+            background:var(--card);
+            display:grid;
+            grid-template-columns:260px 1fr 420px;
+            border-radius:16px;
+            overflow:hidden;
+            box-shadow:0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        aside{
+            padding:35px 25px;
+            border-right:1px solid #ddd;
+            display:flex;
+            flex-direction:column;
+        }
+
+        aside h1{
+            font-size:1.7rem;
+            margin-bottom:20px;
+            text-transform:uppercase;
+        }
+
+        .info{
+            list-style:none;
+            font-size:0.85rem;
+            margin-bottom:30px;
+        }
+
+        .info li{
+            margin-bottom:8px;
+            color:var(--muted);
+        }
+
+        .section-title{
+            font-size:0.9rem;
+            border-bottom:2px solid var(--accent);
+            display:inline-block;
+            margin-bottom:12px;
+        }
+
+        .skill{
+            display:flex;
+            justify-content:space-between;
+            margin-bottom:10px;
+            font-size:0.85rem;
+        }
+
+        .dots{
+            display:flex;
+            gap:4px;
+        }
+        .dot{
+            width:10px;
+            height:10px;
+            border-radius:50%;
+            background:#ccc;
+        }
+        .fill{
+            background:var(--accent);
+        }
+
+        .soft-skills li{
+            font-size:0.85rem;
+            margin-bottom:6px;
+            color:var(--muted);
+        }
+
+        .footer-badge{
+            margin-top:auto;
+            background:var(--accent);
+            color:#fff;
+            padding:14px;
+            margin-left:-25px;
+            width:calc(100% + 25px);
+            text-align:center;
+            font-weight:bold;
+        }
+
+        .image img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        main{
+            padding:40px;
+            overflow-y:auto;
+            max-height:85vh;
+        }
+
+        section{
+            margin-bottom:35px;
+        }
+
+        section h2{
+            color:var(--accent);
+            margin-bottom:10px;
+            text-transform:uppercase;
+            font-size:1.15rem;
+        }
+
+        section p{
+            font-size:0.95rem;
+            line-height:1.6;
+            color:var(--muted);
+        }
+
+        .edu{
+            border-left:3px solid var(--accent);
+            padding-left:15px;
+        }
+
+        .edu-item{
+             margin-bottom:15px;
+        }
+
+        .edu-item span{
+            font-size:0.8rem;
+            color:var(--muted);
+        }
+        button{
+            padding:6px 12px;
+            margin-right:6px;
+            border:none;
+            background:var(--accent);
+            color:#fff;
+            cursor:pointer;
+            border-radius:12px;
+            font-size:0.8rem;
+        }
+        button:hover{
+            color: #c55611;
+        }
+
+        .project.active{
+            background:#fdf3ee;
+        }
+
+
+        .project{
+            background:#fff;
+            border-left:4px solid var(--accent);
+            padding:15px;
+            margin-bottom:12px;
+        }
+
+        .project strong{
+            display:block;
+            margin-bottom:5px;
+        }
+
+        .contact a{
+            display:block;
+            color:var(--text);
+            text-decoration:none;
+            margin-bottom:8px;
+            font-size:0.9rem;
+        }
+
+        .socials a{
+            margin-right:15px;
+            text-decoration:none;
+            color:var(--accent);
+            font-weight:bold;
+        }
+
+        @media(
+            max-width:900px)
+            {
+            .container{
+                grid-template-columns:1fr;
+            }
+            .image{
+                height:320px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <aside>
+            <h1>Sadia Islam<br>Sizi</h1>
+
+            <ul class="info">
+            <li>CSE Student | Web Developer</li>
+            <li><strong>Mobile:</strong> +8801642978001</li>
+            <li><strong>Email:</strong> sadiaislamsizi58@gmail.com</li>
+            </ul>
+
+            <h3 class="section-title">Technical Skills</h3>
+            <div class="skill"><span>HTML / CSS</span><div class="dots"><div class="dot fill"></div><div class="dot fill"></div><div class="dot fill"></div><div class="dot fill"></div><div class="dot"></div></div></div>
+            <div class="skill"><span>JavaScript</span><div class="dots"><div class="dot fill"></div><div class="dot fill"></div><div class="dot fill"></div><div class="dot fill"></div><div class="dot"></div></div></div>
+            <div class="skill"><span>Node.js</span><div class="dots"><div class="dot fill"></div><div class="dot fill"></div><div class="dot fill"></div><div class="dot"></div><div class="dot"></div></div></div>
+            <div class="skill"><span>MySQL</span><div class="dots"><div class="dot fill"></div><div class="dot fill"></div><div class="dot fill"></div><div class="dot fill"></div><div class="dot fill"></div></div></div>
+
+            <h3 class="section-title" style="margin-top:20px;">Soft Skills</h3>
+            <ul class="soft-skills">
+            <li>Problem Solving</li>
+            <li>Self Learner</li>
+            <li>Team Collaboration</li>
+            <li>Good Listener</li>
+            <li>Talkactive Person</li>
+            </ul>
+        </aside>
+
+    <div class="image">
+        <img src="Image/9.jpeg" alt="It'ssss Cheesssssssssyyyyyy">
+    </div>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                I am a CSE student with a strong interest in
+                frontend and backend development, designs and research-based learning. I am passionate about frontend design, art, and creative work. Love watching series and thrilling movies. 
+                Interested in exploring research and developing modern web solutions.
+            </p>
+        </section>
+        <section>
+            <h2>Career Goals</h2>
+            <p>
+                My goal is to become a skilled software engineer specializing in
+                frontend and full-stack development, while contributing to impactful
+                academic and real-world projects. 
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="edu">
+                <div class="edu-item">
+                    <strong>BAIUST-BSc in CSE</strong> : <span>Ongoing</span>
+                </div>
+                <div class="edu-item">
+                    <strong>Cumilla Govt. College</strong> : <span>HSC-2021</span>
+                </div>
+                <div class="edu-item">
+                    <strong>Police Line High School</strong> : <span>SSC-2019</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div style="margin-bottom:15px;">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('web')">Web</button>
+                <button onclick="filterProjects('database')">Database</button>
+                <button onclick="filterProjects('fullstack')">Full-Stack</button>
+            </div>
+
+            <div class="project" data-category="fullstack">
+                <strong>UNIDESK</strong>
+                University Application Management System  
+                <br><small>HTML, CSS, JavaScript, Node.js, MySQL</small>
+            </div>
+
+            <div class="project" data-category="database">
+                <strong>Event Management System</strong>
+                Database-driven system with CRUD operations, views, and reports  
+                <br><small>HTML, CSS, JavaScript, MySQL</small>
+            </div>
+
+            <div class="project" data-category="web">
+                <strong>Personal Portfolio</strong>
+                Academic portfolio website  
+                <br><small>HTML, CSS, JavaScript</small>
+            </div>
+
+            <div class="project" data-category="fullstack">
+                <strong>FIXMate</strong>
+                Smart Maintenance & Asset Management System   
+                <br><small>HTML, CSS, JavaScript, Node.js, MySQL</small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact & Socials</h2>
+            <div class="contact">
+                <a href="mailto:sadiaislamsizi58@gmail.com">📧 Email</a>
+                <a href="tel:01642978001">📞 Call</a>
+            </div>
+            <div class="socials">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+        </section>
+    </main>
+    </div>
+    <script>
+        function filterProjects(category) {
+        const projects = document.querySelectorAll('.project');
+
+        projects.forEach(project => {
+            const type = project.getAttribute('data-category');
+
+            if (category === 'all' || type === category) 
+            {
+                project.style.display = 'block';
+            }
+            else {
+                project.style.display = 'none';
+            }
+        });
+        }
+
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+            }
+        });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.project').forEach(project => {
+            project.style.opacity = 0;
+            project.style.transform = 'translateY(20px)';
+            project.style.transition = '0.6s ease';
+            observer.observe(project);
+        });
+
+        document.querySelectorAll('.project').forEach(project => {
+            project.addEventListener('click', () => {
+                project.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

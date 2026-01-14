@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Feature Alert</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    }
+
+
+    .alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease forwards;
+    }
+
+
+    .alert-icon {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    }
+
+
+    .alert-content {
+    flex: 1;
+    font-size: 1rem;
+    }
+
+
+    .close-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 15px;
+    transition: transform 0.2s;
+    }
+
+    .close-btn:hover {
+    transform: scale(1.2);
+    }
+
+    @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+    .alert {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .close-btn {
+        align-self: flex-end;
+        padding-top: 10px;
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="alert" id="newFeatureAlert">
+    <span class="alert-icon">✨</span>
+    <div class="alert-content">
+      <strong>New Feature!</strong> Our dashboard now has dark mode. Try it now!
+    </div>
+    <span class="close-btn" onclick="closeAlert()">&times;</span>
+  </div>
+</body>
+</html>

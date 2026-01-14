@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter App</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      padding-top: 50px;
+    }
+
+    #countValue {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 20px;
+      color: red;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Counter App</h2>
+
+  <div id="countValue">0</div>
+
+  <button onclick="increment()">Increment</button>
+  <button onclick="decrement()">Decrement</button>
+
+  <script>
+    let count = 0;
+
+    function updateDisplay() {
+      const display = document.getElementById("countValue");
+      display.innerText = count;
+
+      if (count > 0) {
+        display.style.color = "green";
+      } else {
+        display.style.color = "red";
+      }
+    }
+
+    function increment() {
+      count++;
+      updateDisplay();
+    }
+
+    function decrement() {
+      if (count > 0) {
+        count--;
+      }
+    updateDisplay();
+    }
+  </script>
+
+</body>
+</html>

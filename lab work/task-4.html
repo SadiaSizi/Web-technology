@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4faff;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 40px;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 15px;
+      flex-grow: 1;
+    }
+
+    .project-info h3 {
+      margin: 10px 0;
+      color: #0056b3;
+    }
+
+    .project-info p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .project-info a {
+      text-decoration: none;
+      background-color: #0056b3;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .project-info a:hover {
+      background-color: #003d80;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+  <section class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      
+      <div class="project-card">
+        <img src="" alt="Project 1">
+        <div class="project-info">
+          <h3>FixMate</h3>
+          <p>Smart Maintenance & Asset Management System using React.js, Node.js, and MySQL.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="" alt="Project 2">
+        <div class="project-info">
+          <h3>University Application Portal</h3>
+          <p>Web app for students to submit and track applications to university departments.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="" alt="Project 3">
+        <div class="project-info">
+          <h3>Event Management System</h3>
+          <p>Manage university events, registrations, and reports efficiently.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
